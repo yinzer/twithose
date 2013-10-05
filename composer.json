@@ -1,0 +1,12 @@
+{
+    "name": "PensPoints/twitter-streaming",
+    "description": "This is a very cool package!",
+    "version": "0.0.1",
+    "license": "proprietary",
+    "require": {
+        "fennb/phirehose": "dev-master"
+    },
+    "autoload": {
+        "classmap": ["app/"]
+    }
+}
