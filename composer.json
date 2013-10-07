@@ -3,7 +3,9 @@
     "description": "This is a very cool package!",
     "version": "0.0.1",
     "license": "proprietary",
-    "require": {},
+    "require": {
+        "abraham/twitteroauth": "dev-add-composer-json"
+    },
     "autoload": {
         "classmap": ["app/"]
     }
