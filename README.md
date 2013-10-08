@@ -1,6 +1,6 @@
 twithose
 ========
-
+```SQL
 CREATE TABLE `tweets` (
   `name` varchar(50) DEFAULT NULL,
   `screen_name` varchar(15) DEFAULT '',
@@ -10,3 +10,4 @@ CREATE TABLE `tweets` (
   `tweet_id` bigint(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2274 DEFAULT CHARSET=utf8;
+```
