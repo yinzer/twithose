@@ -86,7 +86,7 @@ class redis2mysql {
 
 $dbhost = "127.0.0.1";
 $dbname = "tweets";
-$dbuser = "root";
-$dbpass = "asdf.1234!";
+$dbuser = "";
+$dbpass = "";
 
 $m = new redis2mysql($dbhost, $dbname, $dbuser, $dbpass);
