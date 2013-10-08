@@ -2,19 +2,18 @@
 
 require_once 'vendor/autoload.php';
 
-/*
- * abraham/twitteroauth
 
-define('CONSUMER_KEY', 'vd4d1M6fHJRjBFC2nZ4Dcg');
-define('CONSUMER_SECRET', '1m5HJ3blPp8lPuVTZ6lMOX7KE0SNecGYbWfCDRg');
-define('OAUTH_TOKEN', '167981712-RVQJw1gyhnXZpSZCuLmiTQa6mmPQJviDAyoqXLya');
-define('OAUTH_SECRET', 'vmm2bKKrxuoQWeVYbW3L4bMctq1GL2lDuueTwEveAyw');
-define('OAUTH_CALLBACK', 'http://example.com/twitteroauth/callback.php');
+// The OAuth credentials you received when registering your app at Twitter
+define("TWITTER_CONSUMER_KEY", "vd4d1M6fHJRjBFC2nZ4Dcg");
+define("TWITTER_CONSUMER_SECRET", "1m5HJ3blPp8lPuVTZ6lMOX7KE0SNecGYbWfCDRg");
 
-$connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, OAUTH_TOKEN, OAUTH_SECRET);
-$connection->host = "https://stream.twitter.com/1.1/";
+// The OAuth data for the twitter account
+define("OAUTH_TOKEN", "167981712-RVQJw1gyhnXZpSZCuLmiTQa6mmPQJviDAyoqXLya");
+define("OAUTH_SECRET", "vmm2bKKrxuoQWeVYbW3L4bMctq1GL2lDuueTwEveAyw");
 
-$content = $connection->get('twitterendpoint');
-var_dump($content);
-*/
+// Start streaming
+$sc = new FilterTrackConsumer(OAUTH_TOKEN, OAUTH_SECRET, Phirehose::METHOD_FILTER);
+$sc->setTrack(array('penspoints', 'pens points', '@penspoints', 'lthelp', '@lthelp','google'));
+//$sc->consume();
 
+var_dump($sc);

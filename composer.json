@@ -5,6 +5,7 @@
     "license": "proprietary",
     "require": {
         "fennb/phirehose": "dev-master",
+        "predis/predis": "v0.8.4",
         "abraham/twitteroauth": "dev-add-composer-json"
     },
     "autoload": {
