@@ -1,0 +1,92 @@
+[
+    {
+        "name": "fennb/phirehose",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/fennb/phirehose.git",
+            "reference": "df8d1ee6d468d59cd9fdec79a520bea3556c69dc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/fennb/phirehose/zipball/df8d1ee6d468d59cd9fdec79a520bea3556c69dc",
+            "reference": "df8d1ee6d468d59cd9fdec79a520bea3556c69dc",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.0"
+        },
+        "time": "2013-09-23 14:45:14",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "lib"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL"
+        ],
+        "authors": [
+            {
+                "name": "Fenn Bailey",
+                "homepage": "http://fennb.com/"
+            }
+        ],
+        "description": "A PHP interface to the Twitter Streaming API.",
+        "homepage": "https://github.com/fennb/phirehose",
+        "keywords": [
+            "api",
+            "phirehose",
+            "php",
+            "streaming",
+            "twitter"
+        ]
+    },
+    {
+        "name": "abraham/twitteroauth",
+        "version": "dev-add-composer-json",
+        "version_normalized": "dev-add-composer-json",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/tomohikosato/twitteroauth.git",
+            "reference": "cc2449455b91890ee48eff68c3d5270530e64ed8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/tomohikosato/twitteroauth/zipball/cc2449455b91890ee48eff68c3d5270530e64ed8",
+            "reference": "cc2449455b91890ee48eff68c3d5270530e64ed8",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "time": "2012-11-19 02:41:52",
+        "type": "package",
+        "installation-source": "source",
+        "autoload": {
+            "files": [
+                "twitteroauth/twitteroauth.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Abraham Williams",
+                "email": "abraham@abrah.am",
+                "homepage": "http://abrah.am",
+                "role": "Developer"
+            }
+        ],
+        "description": "Twitter oauth",
+        "keywords": [
+            "Twitter API",
+            "Twitter oAuth"
+        ]
+    }
+]
