@@ -37,7 +37,7 @@ class Process {
 	public function test(){
 		$count = $this->redis->lLen('tweets');
 		$tweets = $this->redis->lRange('tweets', 0, -1);
-		if ($count){
+		if ($count > 10){
 			foreach ($tweets as $tweet){
 				self::addTweetsToDB($tweet);
 			}

@@ -46,5 +46,5 @@ define("OAUTH_SECRET", "5ZS9O4WIKxyuMcxS8mp7A8v8wHk9N3lB0nkM40OPes");
 
 // Start streaming
 $sc = new FilterTrackConsumer(OAUTH_TOKEN, OAUTH_SECRET, Phirehose::METHOD_FILTER);
-$sc->setTrack(array('google'));
+$sc->setTrack(array('penspoints'));
 $sc->consume();
