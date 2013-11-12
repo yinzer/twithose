@@ -1,5 +1,4 @@
 <?php
-require_once 'vendor/autoload.php';
 
 class FilterTrackConsumer extends OauthPhirehose {
 
@@ -28,23 +27,10 @@ class FilterTrackConsumer extends OauthPhirehose {
         	$this->redis->hMset($arr['sn'].':'.$arr['id'], $arr);
         	$this->redis->rPush('tweets', $arr['sn'].':'.$arr['id']);
 
-        	$this->redis->publish('tweet', $arr['sn'].':'.$arr['id']);
+        	// $this->redis->publish('tweet', $arr['sn'].':'.$arr['id']);
         	// $this->redis->publish('tweet-count', $this->redis->lLen('tweets'));
             
             print $data['user']['screen_name'] . ': ' . urldecode($data['text']) . "\n";
         }
     }
 }
-
-// The OAuth credentials you received when registering your app at Twitter
-define("TWITTER_CONSUMER_KEY", "RZnKdFOJiaWPgTItYDzumQ");
-define("TWITTER_CONSUMER_SECRET", "9yqD1Il4oyztxqefxbWSb090uHeLPWlm7vXPFMaZ4");
-
-// The OAuth data for the twitter account
-define("OAUTH_TOKEN", "167981712-8t3Rgo3SU2sraFrTlfNfhXLM6LFpCd715qSlDMij");
-define("OAUTH_SECRET", "5ZS9O4WIKxyuMcxS8mp7A8v8wHk9N3lB0nkM40OPes");
-
-// Start streaming
-$sc = new FilterTrackConsumer(OAUTH_TOKEN, OAUTH_SECRET, Phirehose::METHOD_FILTER);
-$sc->setTrack(array('penspoints'));
-$sc->consume();
