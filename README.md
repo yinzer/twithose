@@ -4,7 +4,9 @@ Consume tweets from twitter in realtime
 
 ##composer
 Make sure [composer](https://github.com/composer/composer) is installed and run:
-::sh composer install
+```sh 
+$ composer install
+```
 
 ##database
 ```SQL
