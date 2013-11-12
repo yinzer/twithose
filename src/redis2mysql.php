@@ -34,7 +34,7 @@ class Process {
 			$date = new DateTime($tweet['created'], $estTimezone);
 			$offset = $userTimezone->getOffset($date);
 			$date->modify($offset . 'seconds');
-			// echo $offset;
+
 			$params = array(
 				':name' => $tweet['name'],
 				':screen_name' => $tweet['sn'],
