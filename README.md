@@ -34,7 +34,7 @@ CREATE TABLE `tweets` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2098 DEFAULT CHARSET=utf8;
 ```
-Add your database connection information to [process.php]
+Add your database connection information to (process.php)
 
 ##twitter oauth credentials
 You will need the following from [Twitter](https://dev.twitter.com):
@@ -42,4 +42,4 @@ You will need the following from [Twitter](https://dev.twitter.com):
 * TWITTER_CONSUMER_SECRET
 * OAUTH_TOKEN
 * OAUTH_SECRET
-Once you have these, replace them accordingly in [twithose.php]
+Once you have these, replace them accordingly in (twithose.php)
