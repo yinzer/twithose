@@ -3,12 +3,22 @@
 Consume tweets from twitter in realtime
 
 ##composer
-Make sure [composer](https://github.com/composer/composer) is installed and run:
+Install [Composer](https://github.com/composer/composer) Globally:
+```sh
+$ curl -sS https://getcomposer.org/installer | php
+$ mv composer.phar /usr/local/bin/composer
+```
+
 ```sh 
 $ composer install
 ```
 
+##redis
+Install [nicolasff/phpredis](https://github.com/nicolasff/phpredis)
+
+
 ##database
+Setup table for tweets
 ```SQL
 CREATE TABLE `tweets` (
   `id` int(20) unsigned NOT NULL AUTO_INCREMENT,
@@ -26,4 +36,8 @@ CREATE TABLE `tweets` (
 ```
 
 ##twitter oauth credentials
-
+You will need the following from [Twitter](https://dev.twitter.com):
+* TWITTER_CONSUMER_KEY
+* TWITTER_CONSUMER_SECRET
+* OAUTH_TOKEN
+* OAUTH_SECRET
