@@ -14,7 +14,9 @@ $ composer install
 ```
 
 ##redis
-Install [nicolasff/phpredis](https://github.com/nicolasff/phpredis)
+Install:
+* [redis.io](http://redis.io/)
+* [nicolasff/phpredis](https://github.com/nicolasff/phpredis)
 
 
 ##database
@@ -43,3 +45,7 @@ You will need the following from [Twitter](https://dev.twitter.com):
 * OAUTH_TOKEN
 * OAUTH_SECRET
 Once you have these, replace them accordingly in [twithose.php](twithose.php)
+
+#run
+* Run twithose.php as a process
+* Setup a cronjob to run process.php however often you'd like (try 5 minutes?)
