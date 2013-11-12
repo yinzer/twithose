@@ -2,6 +2,11 @@
 
 Consume tweets from twitter in realtime
 
+##composer
+Make sure [composer](https://github.com/composer/composer) is installed and run:
+::sh composer install
+
+##database
 ```SQL
 CREATE TABLE `tweets` (
   `id` int(20) unsigned NOT NULL AUTO_INCREMENT,
@@ -17,4 +22,6 @@ CREATE TABLE `tweets` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2098 DEFAULT CHARSET=utf8;
 ```
+
+##twitter oauth credentials
 
