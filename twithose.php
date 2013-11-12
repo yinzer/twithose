@@ -11,5 +11,5 @@ define("OAUTH_SECRET", "XXXXXXXX");
 
 // Start streaming
 $sc = new FilterTrackConsumer(OAUTH_TOKEN, OAUTH_SECRET, Phirehose::METHOD_FILTER);
-$sc->setTrack(array('google'));
+$sc->setTrack(array('google'));	// array('track', '@this', 'and', '#this')
 $sc->consume();
